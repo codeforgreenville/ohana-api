@@ -8,3 +8,7 @@ Forked from [https://github.com/codeforamerica/ohana-api](https://github.com/cod
 * Rails version 4.1.1
 * Postgres
 * Testing Frameworks: RSpec, Factory Girl, Capybara
+
+## Current Deployment(s)
+
+* [Heroku Hobby Tier](http://gsc-brigade-ohana-api.herokuapp.com/)
