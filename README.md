@@ -8,7 +8,7 @@ Before we started working on the Ohana API, the search interface that residents 
 
 ## Stack Overview
 
-* Ruby version 2.1.1
+* Ruby version 2.1.2
 * Rails version 4.1.1
 * Postgres
 * Testing Frameworks: RSpec, Factory Girl, Capybara
