@@ -11,6 +11,6 @@ Forked from [https://github.com/codeforamerica/ohana-api](https://github.com/cod
 
 ## Current Deployment(s)
 
-* [Heroku Hobby Tier](http://gsc-brigade-ohana-api.herokuapp.com/) | [Admin(http://gsc-brigade-ohana-api.herokuapp.com/admin)]
+* [Heroku Hobby Tier](http://gsc-brigade-ohana-api.herokuapp.com/) | [Admin](http://gsc-brigade-ohana-api.herokuapp.com/admin)
 
 
