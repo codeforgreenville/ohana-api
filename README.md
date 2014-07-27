@@ -1,5 +1,6 @@
 #Ohana API
 
+<<<<<<< HEAD
 Forked from [https://github.com/codeforamerica/ohana-api](https://github.com/codeforamerica/ohana-api)
 
 ## Stack Overview
