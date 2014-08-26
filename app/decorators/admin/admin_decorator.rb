@@ -7,6 +7,10 @@ class Admin
     end
 
     def locations
+      puts '******'
+      puts admin.super_admin?
+      puts '******'
+
       if admin.super_admin?
         Location.pluck(:id, :name, :slug)
       else

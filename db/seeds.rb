@@ -7,37 +7,70 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-puts '===> Setting up first test user...'
-user = User.create! name: 'First User',
-                    email: 'user@example.com',
-                    password: 'mong01dtest',
-                    password_confirmation: 'mong01dtest'
-user.confirm!
-
-puts '===> Setting up second test user...'
-user2 = User.create! name: 'Second User',
-                     email: 'user2@example.com',
-                     password: 'mong01dtest',
-                     password_confirmation: 'mong01dtest'
-user2.confirm!
-
-puts '===> Setting up first test admin...'
-admin = Admin.create! :name => 'admin with custom domain name',
-                    :email => 'ohana@samaritanhouse.com',
-                    :password => 'ohanatest',
-                    :password_confirmation => 'ohanatest'
-admin.confirm!
-
-puts '===> Setting up second test admin...'
-admin2 = Admin.create! :name => 'admin with generic email',
-                     :email => 'ohana@gmail.com',
-                     :password => 'ohanatest',
-                     :password_confirmation => 'ohanatest'
-admin2.confirm!
-
-puts '===> Setting up test super admin...'
-admin3 = Admin.create! :name => 'Super Admin',
-                     :email => 'masteradmin@ohanapi.org',
-                     :password => 'ohanatest',
-                     :password_confirmation => 'ohanatest'
-admin3.confirm!
+Organization.create! :urls => ['http://www.aidupstate.org/index.htm'], :name=> "AID Upstate"
+Organization.create! :urls => ['http://www.redcross.org/sc/nc'], :name=> "American Red Cross"
+Organization.create! :urls => ['http://cancercrackdown.org/'], :name=> "Cancer Crackdown"
+Organization.create! :urls => ['http://www.cancersocietygc.org/'], :name=> "Cancer Society of Greenville"
+Organization.create! :urls => ['http://www.cardiacarrestawareness.org/'], :name=> "Cardiac Arrest Awareness Foundation"
+Organization.create! :urls => ['http://www.carolinafamily.org/'], :name=> "Carolina Family Services"
+Organization.create! :urls => ['http://www.centercs.com/'], :name=> "Center for Community Services"
+Organization.create! :urls => ['http://www.achildshaven.org/'], :name=> "A Child's Haven"
+Organization.create! :urls => ['http://cbbsc.org/'], :name=> "Children's Book Bank of South Carolina"
+Organization.create! :urls => ['http://www.scchildren.org/'], :name=> "The Children's Trust of South Carolina"
+Organization.create! :urls => ['http://www.cfgreenville.org/'], :name=> "Community Foundation of Greenville"
+Organization.create! :urls => ['http://www.compassofcarolina.org/'], :name=> "Compass of Carolina"
+Organization.create! :urls => ['http://www.tcfofgreenvillesc.org/'], :name=> "Compassionate Friends"
+Organization.create! :urls => ['http://www.crossroadsgrouphome.com/'], :name=> "Crossroads"
+Organization.create! :urls => ['http://www.greersoupkitchen.com/'], :name=> "Daily Bread Ministries"
+Organization.create! :urls => ['http://www.dhgh.org/'], :name=> "Diligent Hands Gracious Hearts"
+Organization.create! :urls => ['http://dogsforautism.org/'], :name=> "Dogs for Autism"
+Organization.create! :urls => ['http://www.dsfagreenville.org/'], :name=> "Down Syndrome Family Alliance of Greenville"
+Organization.create! :urls => ['http://www.foothillsfamilyresources.org/'], :name=> "Foothills Family Resources"
+Organization.create! :urls => ['http://www.freedomwithinwalls.org/'], :name=> "Freedom Within Walls"
+Organization.create! :urls => ['http://generousgarden.org/'], :name=> "Generous Garden Project"
+Organization.create! :urls => ['http://www.goodwillsc.org/'], :name=> "Goodwill Industries of Upper South Carolina"
+Organization.create! :urls => ['http://www.greenvillecounty.org/acs/'], :name=> "Greenville County Animal Care"
+Organization.create! :urls => ['http://www.gcdsnb.com/'], :name=> "Greenville County Disabilities and Special Needs Board"
+Organization.create! :urls => ['http://www.gfpdrugfree.org/'], :name=> "Greenville Family Partnership"
+Organization.create! :urls => ['http://www.greenvilleforward.com/'], :name=> "Greenville Forward"
+Organization.create! :urls => ['http://greenvilleliteracy.org/'], :name=> "Greenville Literacy Association"
+Organization.create! :urls => ['http://gcminc.org/'], :name=> "Greer Community Ministries"
+Organization.create! :urls => ['http://www.greerrelief.org/'], :name=> "Greer Relief"
+Organization.create! :urls => ['http://www.habitatgreenville.org/'], :name=> "Habitat for Humanity of Greenville County"
+Organization.create! :urls => ['http://www.handsongreenville.org/'], :name=> "Hands On Greenville"
+Organization.create! :urls => ['http://www.homeworksofamerica.org/'], :name=> "Home Works of SC"
+Organization.create! :urls => ['http://www.hospicehousegc.org/'], :name=> "Hospice House of Greenville"
+Organization.create! :urls => ['http://www.internationalupstate.org/'], :name=> "International Center of the Upstate"
+Organization.create! :urls => ['http://www.julievalentinecenter.org/'], :name=> "Julie Valentine Center"
+Organization.create! :urls => ['http://www.eastsidekiwanis.org/'], :name=> "Kiwanis Club of Greenville-Eastside"
+Organization.create! :urls => ['http://www.liquidhighway.com/'], :name=> "Liquid Highway"
+Organization.create! :urls => ['http://www.littlestepssc.org/'], :name=> "Little Steps"
+Organization.create! :urls => ['http://www.loavesandfishesgreenville.com/'], :name=> "Loaves &amp"
+Organization.create! :urls => ['http://lovelocaloftheupstate.org/'], :name=> "Love Local of the Upstate"
+Organization.create! :urls => ['http://www.mealsonwheelsgreenville.org/'], :name=> "Meals on Wheels of Greenville"
+Organization.create! :urls => ['http://www.millvillagefarms.org/'], :name=> "Mill Village Farms"
+Organization.create! :urls => ['http://www.miraclehill.org/'], :name=> "Miracle Hill Ministries"
+Organization.create! :urls => ['http://www.orgsites.com/sc/greenvillenewcomers/'], :name=> "Newcomers of Greater Greenville"
+Organization.create! :urls => ['http://www.pendletonplace.org/'], :name=> "Pendleton Place Children's Shelter"
+Organization.create! :urls => ['http://www.piedmonterc.org/'], :name=> "Piedmont Emergency Relief Center"
+Organization.create! :urls => ['http://www.piedmontwomenscenter.org/'], :name=> "Piedmont Women's Center"
+Organization.create! :urls => ['http://www.pleasantvalleyconnection.org/'], :name=> "Pleasant Valley Connection"
+Organization.create! :urls => ['http://www.projecthopesc.org/'], :name=> "Project HOPE Foundation"
+Organization.create! :urls => ['http://www.projecthost.org/'], :name=> "Project Host"
+Organization.create! :urls => ['http://publicedpartnersgc.org/'], :name=> "Public Education Partners of Greenville County"
+Organization.create! :urls => ['http://safeharborsc.org/'], :name=> "Safe Harbor"
+Organization.create! :urls => ['http://www.salvationarmycarolinas.org/commands/greenvillesc'], :name=> "The Salvation Army Greenville"
+Organization.create! :urls => ['http://www.senioraction.org/'], :name=> "Senior Action"
+Organization.create! :urls => ['http://www.slaterhallsc.org/'], :name=> "Slater Hall Citizen's Committee"
+Organization.create! :urls => ['http://scgal.org/greenville/index.html'], :name=> "South Carolina Volunteer Guardian ad Litem Program"
+Organization.create! :urls => ['http://www.saveveryday.org/'], :name=> "Standing Against Violence Everyday"
+Organization.create! :urls => ['http://greenvillerec.com/sterling'], :name=> "Sterling Community Center"
+Organization.create! :urls => ['http://sharesc.org/'], :name=> "Sunbelt Human Advancement Resources"
+Organization.create! :urls => ['http://uglywordsgreenville.bellstrike.com/'], :name=> "Ugly Words"
+Organization.create! :urls => ['http://www.united-ministries.org/'], :name=> "United Ministries"
+Organization.create! :urls => ['http://www.unitedwaygc.org/'], :name=> "United Way of Greenville County"
+Organization.create! :urls => ['http://www.upstatemediation.com/'], :name=> "Upstate Community Mediation Center"
+Organization.create! :urls => ['http://www.urbanleagueoftheupstate.org/'], :name=> "Urban League of the Upstate"
+Organization.create! :urls => ['http://www.ymcagreenville.org/'], :name=> "YMCA of Greenville"
+Organization.create! :urls => ['http://www.youth-base.org/'], :name=> "YouthBASE"
+Organization.create! :urls => ['http://www.ywcagreenville.org/'], :name=> "YWCA of Greenville"
