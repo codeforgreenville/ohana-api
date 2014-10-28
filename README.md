@@ -1,3 +1,5 @@
+Please see the *Wiki Pages* and *Issues* links in the right sidebar for the latest project updates.
+
 #Ohana API & Admin
 
 Forked from [https://github.com/codeforamerica/ohana-api](https://github.com/codeforamerica/ohana-api)
